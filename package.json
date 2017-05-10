@@ -23,12 +23,12 @@
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git+https://github.com/cuarti/agama-platform.git"
   },
+  "homepage": "https://github.com/cuarti/agama-platform#readme",
   "bugs": {
-    "url": ""
+    "url": "https://github.com/cuarti/agama-platform/issues"
   },
-  "homepage": "",
   "dependencies": {
     "@types/node": "^7.0.18"
   },
