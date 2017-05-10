@@ -1,0 +1,38 @@
+{
+  "name": "@agama/platform",
+  "version": "0.1.0",
+  "description": "Utility library to get information about platform",
+  "keywords": [
+    "agama",
+    "isomorphic",
+    "utility",
+    "platform"
+  ],
+  "license": "MIT",
+  "main": "src/index.js",
+  "typings": "src/index",
+  "scripts": {
+    "dev": "tsc --watch",
+    "build": "tsc",
+    "test": "echo not implemented yet",
+    "prepublish": "npm run build"
+  },
+  "author": {
+    "name": "Albert Cuartiella",
+    "email": "cuarti1992@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "dependencies": {
+    "@types/node": "^7.0.18"
+  },
+  "devDependencies": {
+    "typescript": "^2.3.2"
+  }
+}
