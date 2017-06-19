@@ -14,14 +14,15 @@ export const platform: Platform = new Platform();
 if(typeof process === 'object' && process.versions['electron']) {
     platform.type = PlatformType.ELECTRON;
 
-} else if(typeof module === 'object' && module.exports) {
+// } else if(typeof module === 'object' && module.exports) {
+} else if(typeof process === 'object' && typeof process.versions === 'object' && process.versions.node) {
     platform.type = PlatformType.NODEJS;
 
 } else if(typeof window === 'object') {
     platform.type = PlatformType.BROWSER;
 }
 
-platform.os = require(`./platforms/${platform.isNodeJS() ? 'nodejs' : 'browser'}`);
+platform.os = platform.isNodeJS() ? require('./platforms/nodejs') : require('./platforms/browser');
 
 
 /**

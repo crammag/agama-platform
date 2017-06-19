@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Agama Platform</title>
+        <script type="text/javascript" src="../dist/agama.platform.js" ></script>
+    </head>
+    <body>
+        <script type="text/javascript" >
+
+            var content = '';
+
+            prop('Browser', agama.platform.IS_BROWSER);
+            prop('NodeJS', agama.platform.IS_NODEJS);
+
+            document.write(content);
+
+            function prop(name, value) {
+                content += '<p><b>' + name + ':</b> ' + value + '</p>';
+            }
+
+        </script>
+    </body>
+</html>
