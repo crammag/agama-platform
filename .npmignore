@@ -1,7 +1,9 @@
 
 ### NPM ignore
 demo/
+test/
 doc/
+webpack.*.js
 
 ### Platform
 node_modules/
