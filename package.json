@@ -29,10 +29,9 @@
   "bugs": {
     "url": "https://github.com/cuarti/agama-platform/issues"
   },
-  "dependencies": {
-    "@types/node": "^7.0.18"
-  },
+  "dependencies": {},
   "devDependencies": {
+    "@types/node": "^8.0.0",
     "typescript": "^2.3.2"
   }
 }
