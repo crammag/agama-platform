@@ -13,6 +13,8 @@ export const platform: Platform = new Platform();
 
 if(typeof process === 'object' && process.versions['electron']) {
     platform.type = PlatformType.ELECTRON;
+} else if(typeof navigator === 'object' && navigator.product.toUpperCase() === 'REACTNATIVE') {
+    platform.type = PlatformType.REACNATIVE;
 
 // } else if(typeof module === 'object' && module.exports) {
 } else if(typeof process === 'object' && typeof process.versions === 'object' && process.versions.node) {
@@ -39,6 +41,11 @@ export const IS_NODEJS: boolean = platform.isNodeJS();
  * If current platform is Electron
  */
 export const IS_ELECTRON: boolean = platform.isElectron();
+
+/**
+ * If current platform is React Native
+ */
+export const IS_REACTNATIVE: boolean = platform.isReactNative();
 
 /**
  * If current platform is NWJS

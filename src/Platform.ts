@@ -24,6 +24,7 @@ export class Platform {
     public isBrowser(): boolean {
         return this.type === PlatformType.BROWSER
             || this.type === PlatformType.ELECTRON
+            || this.type === PlatformType.REACNATIVE
             || this.type === PlatformType.NWJS;
     }
 
@@ -41,6 +42,13 @@ export class Platform {
      */
     public isElectron(): boolean {
         return this.type === PlatformType.ELECTRON;
+    }
+
+    /**
+     * If platform is Electron
+     */
+    public isReactNative(): boolean {
+        return this.type === PlatformType.REACNATIVE;
     }
 
     /**

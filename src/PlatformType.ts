@@ -12,6 +12,8 @@ export enum PlatformType {
 
     NWJS,
 
-    RHINO
+    RHINO,
+
+    REACNATIVE
 
 }
